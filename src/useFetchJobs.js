@@ -22,7 +22,7 @@ const reducer = (state, action) => {
     }
 }
 
-export default useFetchJobs = (params, page) => {
+export default function useFetchJobs (params, page) {
     const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true });
 
     useEffect(() => {
